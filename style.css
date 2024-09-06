@@ -1,0 +1,189 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f0f0f0;
+}
+
+header {
+  background-color: #003366;
+  color: white;
+  padding: 10px 0;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+header h1 {
+  font-size: 24px;
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+header ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+header .social a {
+  color: white;
+  font-size: 24px;
+}
+
+.carousel-section {
+  margin-top: 20px;
+}
+
+.carousel {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.carousel-images {
+  display: flex;
+  transition: transform 0.4s ease;
+}
+
+.carousel-images img {
+  width: 100%;
+  max-width: 1000px;
+  height: auto;
+}
+
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.carousel-button.prev {
+  left: 0;
+}
+
+.carousel-button.next {
+  right: 0;
+}
+
+./* Seção Sobre Mim */
+#sobre-mim {
+    background-color: #f4f4f4;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#sobre-mim h2 {
+    color: #003399; /* Azul */
+}
+
+#sobre-mim p {
+    font-size: 18px;
+    color: #333;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.propostas {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 50px 20px;
+  background-color: #f0f0f0; /* cor de fundo da seção */
+}
+
+.proposta {
+  background-color: #ffcc00; /* amarelo */
+  padding: 20px;
+  width: 250px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.proposta h3 {
+  color: #003366; /* azul */
+  margin-bottom: 10px;
+}
+
+.proposta p {
+  color: #333333; /* cor do texto */
+  font-size: 16px;
+  line-height: 1.5;
+}
+/* Título das Propostas */
+.titulo-propostas {
+    text-align: center;
+    font-size: 36px;
+    color: #003366; /* Azul */
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+/* Título "Sobre Mim" */
+.sobre-mim {
+    text-align: center;
+    font-size: 36px;
+    color: #003366; /* Azul */
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+/* Seção "Sobre Mim" para o conteúdo */
+.sobre-mim-conteudo {
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333333; /* Texto principal */
+    margin-bottom: 40px;
+}
+
+
+/* Contato */
+#contato {
+    background-color: #003399; /* Azul escuro */
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+#contato h2 {
+    color: #ffcc00; /* Amarelo */
+}
+
+#contato p {
+    font-size: 18px;
+    margin: 5px 0;
+}
+#sobre-mim h1 {
+    text-align: center;
+}
+/* Rodapé */
+footer {
+    background-color: #002266;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
