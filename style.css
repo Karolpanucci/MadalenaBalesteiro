@@ -19,6 +19,12 @@ header {
 }
 
 nav {
+
+
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
   display: flex;
   justify-content: space-around; /* Para espaçar os itens do menu */
   padding: 15px;
