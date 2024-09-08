@@ -13,42 +13,31 @@ body {
 header {
   position: fixed;
   top: 0;
+  height: 50px;
   width: 100%;
   background-color: #003366; /* Cor do fundo do menu */
   z-index: 1000; /* Garante que o menu fique acima de outros elementos */
 }
 
 nav {
-
-
-  align-items: center;
-  max-width: 1200px;
-  margin: auto;
-  padding: 0 20px;
   display: flex;
-  justify-content: space-around; /* Para espaçar os itens do menu */
-  padding: 15px;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1400px; /* Aumentando a largura do nav */
+  margin: auto;
+  padding: 0 30px; /* Ajustando o padding para deixar o nav mais espaçoso */
 }
 
 nav a {
   color: white;
   text-decoration: none;
-  padding: 10px;
+  padding: 15px; /* Aumentando o padding interno dos links */
   font-weight: bold;
+  font-size: 18px; /* Aumentando o tamanho da fonte */
 }
 
 body {
-  padding-top: 80px; /* Compensa a altura do menu fixo, para evitar sobreposição de conteúdo */
-}
-
-
-header nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1200px;
-  margin: auto;
-  padding: 0 20px;
+  padding-top: 80px; /* Compensa a altura do menu fixo */
 }
 
 header h1 {
@@ -58,7 +47,7 @@ header h1 {
 header ul {
   list-style: none;
   display: flex;
-  gap: 20px;
+  gap: 30px; /* Aumenta o espaçamento entre os itens do menu */
 }
 
 header ul li a {
@@ -159,6 +148,7 @@ header .social a {
   font-size: 16px;
   line-height: 1.5;
 }
+
 /* Título das Propostas */
 .titulo-propostas {
     text-align: center;
@@ -186,7 +176,6 @@ header .social a {
     margin-bottom: 40px;
 }
 
-
 /* Contato */
 #contato {
     background-color: #003399; /* Azul escuro */
@@ -203,9 +192,7 @@ header .social a {
     font-size: 18px;
     margin: 5px 0;
 }
-#sobre-mim h1 {
-    text-align: center;
-}
+
 /* Rodapé */
 footer {
     background-color: #002266;
