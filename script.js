@@ -21,3 +21,13 @@ setInterval(goToNextSlide, intervalTime);
 // Adicionar eventos para os botões de navegação
 document.querySelector('.carousel-button.next').addEventListener('click', goToNextSlide);
 document.querySelector('.carousel-button.prev').addEventListener('click', goToPreviousSlide);
+
+
+
+  function toggleMenu() {
+    const menu = document.querySelector('nav ul');
+    const hamburger = document.querySelector('.hamburger');
+    menu.classList.toggle('active');
+    hamburger.classList.toggle('active');
+  }
+
