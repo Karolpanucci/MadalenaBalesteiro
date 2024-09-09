@@ -240,7 +240,13 @@ footer {
     left: 0;
     text-align: center;
   }
-
+  .hamburger {
+    display: block;
+    position: absolute;
+    left: 20px; /* Coloca o ícone à esquerda */
+    top: 15px; /* Ajusta o espaçamento em relação ao topo */
+    z-index: 1001; /* Certifica-se de que o ícone apareça acima de outros elementos */
+  }
   nav ul li {
     padding: 15px 0;
   }
