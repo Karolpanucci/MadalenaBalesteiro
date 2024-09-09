@@ -10,6 +10,7 @@ body {
   background-color: #f0f0f0;
 }
 
+/* Header fixo no topo */
 header {
   position: fixed;
   top: 0;
@@ -19,6 +20,7 @@ header {
   z-index: 1000; /* Garante que o menu fique acima de outros elementos */
 }
 
+/* Estilo do nav */
 nav {
   display: flex;
   justify-content: space-between;
@@ -36,10 +38,7 @@ nav a {
   font-size: 18px; /* Aumentando o tamanho da fonte */
 }
 
-body {
-  padding-top: 80px; /* Compensa a altura do menu fixo */
-}
-
+/* Estilo dos links e menu social */
 header h1 {
   font-size: 24px;
 }
@@ -60,6 +59,7 @@ header .social a {
   font-size: 24px;
 }
 
+/* Seção do carrossel */
 .carousel-section {
   margin-top: 20px;
 }
@@ -104,22 +104,23 @@ header .social a {
 
 /* Seção Sobre Mim */
 #sobre-mim {
-    background-color: #f4f4f4;
-    padding: 50px 20px;
-    text-align: center;
+  background-color: #f4f4f4;
+  padding: 50px 20px;
+  text-align: center;
 }
 
 #sobre-mim h2 {
-    color: #003399; /* Azul */
+  color: #003399; /* Azul */
 }
 
 #sobre-mim p {
-    font-size: 18px;
-    color: #333;
-    width: 70%;
-    margin: 0 auto;
+  font-size: 18px;
+  color: #333;
+  width: 70%;
+  margin: 0 auto;
 }
 
+/* Seção Propostas */
 .propostas {
   display: flex;
   justify-content: center;
@@ -151,66 +152,73 @@ header .social a {
 
 /* Título das Propostas */
 .titulo-propostas {
-    text-align: center;
-    font-size: 36px;
-    color: #003366; /* Azul */
-    margin-bottom: 30px;
-    font-weight: bold;
+  text-align: center;
+  font-size: 36px;
+  color: #003366; /* Azul */
+  margin-bottom: 30px;
+  font-weight: bold;
 }
 
 /* Título "Sobre Mim" */
 .sobre-mim {
-    text-align: center;
-    font-size: 36px;
-    color: #003366; /* Azul */
-    margin-bottom: 30px;
-    font-weight: bold;
+  text-align: center;
+  font-size: 36px;
+  color: #003366; /* Azul */
+  margin-bottom: 30px;
+  font-weight: bold;
 }
 
 /* Seção "Sobre Mim" para o conteúdo */
 .sobre-mim-conteudo {
-    text-align: center;
-    font-size: 18px;
-    line-height: 1.6;
-    color: #333333; /* Texto principal */
-    margin-bottom: 40px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333333; /* Texto principal */
+  margin-bottom: 40px;
 }
 
 /* Contato */
 #contato {
-    background-color: #003399; /* Azul escuro */
-    color: white;
-    padding: 30px 20px;
-    text-align: center;
+  background-color: #003399; /* Azul escuro */
+  color: white;
+  padding: 30px 20px;
+  text-align: center;
 }
 
 #contato h2 {
-    color: #ffcc00; /* Amarelo */
+  color: #ffcc00; /* Amarelo */
 }
 
 #contato p {
-    font-size: 18px;
-    margin: 5px 0;
+  font-size: 18px;
+  margin: 5px 0;
 }
 
 /* Rodapé */
 footer {
-    background-color: #002266;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
+  background-color: #002266;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
 }
 
-/* Esconder o menu e exibir o ícone de sanduíche em dispositivos móveis */
+/* Estilos para o menu hambúrguer */
+.hamburger {
+  display: none;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Responsividade */
 @media (max-width: 768px) {
-  
   nav ul {
     display: none;
     flex-direction: column;
     background-color: #003366;
     width: 100%;
     position: absolute;
-    top: 60px;
+    top: 50px;
     left: 0;
     text-align: center;
   }
@@ -219,30 +227,22 @@ footer {
     padding: 15px 0;
   }
 
-  nav ul li a {
-    color: white;
-    display: block;
+  nav ul.active {
+    display: flex;
   }
 
   .hamburger {
     display: block;
-    font-size: 30px;
-    color: white;
-    cursor: pointer;
   }
 
-  .hamburger.active + ul {
-    display: flex;
-  }
-  
-  /* Ajuste para o logo */
+  /* Ajuste para logo */
   header .logo {
     width: 100%;
     text-align: center;
   }
 }
 
-/* Para telas maiores, o ícone de sanduíche não será exibido */
-.hamburger {
-  display: none;
+/* Compensação do header fixo */
+body {
+  padding-top: 80px;
 }
