@@ -5,34 +5,56 @@
 }
 
 body {
+  padding-top: 120px; 
   font-family: Arial, sans-serif;
   line-height: 1.6;
   background-color: #f0f0f0;
 }
 
-/* Header fixo no topo */
 header {
   position: fixed;
   top: 0;
-  height: 50px;
+  height: 70px; /* Aumente a altura do header */
   width: 100%;
-  background-color: #003366; /* Cor do fundo do menu */
-  z-index: 1000; /* Garante que o menu fique acima de outros elementos */
+  background-color: #003366;
+  z-index: 1000;
+  padding-top: 20px; /* Adiciona um espaço extra entre o topo e o conteúdo do menu */
 }
 
-/* Estilo do nav */
 nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  max-width: 1400px; /* Aumentando a largura do nav */
+  max-width: 1400px;
   margin: auto;
-  padding: 0 30px; /* Ajustando o padding para deixar o nav mais espaçoso */
 }
+
+header ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+nav a:hover {
+  color: #ffcc00; /* Cor amarela ao passar o mouse */
+}
+
+.social a {
+  color: white;
+  font-size: 24px;
+  margin-left: 10px; /* Adiciona espaço entre os ícones */
+  text-decoration: none;
+}
+
+.social a:hover {
+  color: #ffcc00; /* Altere a cor ao passar o mouse */
+}
+
 
 nav a {
   color: white;
   text-decoration: none;
+  margin-top: 0px;
   padding: 15px; /* Aumentando o padding interno dos links */
   font-weight: bold;
   font-size: 18px; /* Aumentando o tamanho da fonte */
@@ -43,11 +65,7 @@ header h1 {
   font-size: 24px;
 }
 
-header ul {
-  list-style: none;
-  display: flex;
-  gap: 30px; /* Aumenta o espaçamento entre os itens do menu */
-}
+
 
 header ul li a {
   color: white;
